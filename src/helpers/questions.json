@@ -1,0 +1,50 @@
+{
+    "questions": [
+        {
+            "question": "You journey to the protected promised land, you bring with you:",
+            "answers": {
+                "0": "Supplies",
+                "1": "Weapons"
+            }
+        },
+        {
+            "question": "Fearful of the foe before you, now is your only time to act. You:",
+            "answers": {
+                "0": "Fight", 
+                "1": "Run"
+            }
+        },
+        {
+            "question": "Trapped in unfamiliar surroundings, you:",
+            "answers": {
+                "0": "Await death", 
+                "1": "Plot your escape"
+            }
+        },
+        {
+            "question": "Betrayed by your closest friend, you:",
+            "answers": {
+                "0": "Cut ties", 
+                "1": "Forgive and forget"
+            }
+        }
+    ],
+    "combinations": {
+        "SuppliesFightAwait deathCut ties": "Song A",
+        "SuppliesFightAwait deathForgive and forget": "Song B",
+        "SuppliesFightPlot your escapeCut ties": "Song C",
+        "SuppliesFightPlot your escapeForgive and forget": "Song D",
+        "SuppliesRunAwait deathCut ties": "Song E",
+        "SuppliesRunAwait deathForgive and forget": "Song F",
+        "SuppliesRunPlot your escapeCut ties": "Song G",
+        "SuppliesRunPlot your escapeForgive and forget": "Song H",
+        "WeaponsFightAwait deathCut ties": "Song I",
+        "WeaponsFightAwait deathForgive and forget": "Song J",
+        "WeaponsFightPlot your escapeCut ties": "Song K",
+        "WeaponsFightPlot your escapeForgive and forget": "Song L",
+        "WeaponsRunAwait deathCut ties": "Song M",
+        "WeaponsRunAwait deathForgive and forget": "Song N",
+        "WeaponsRunPlot your escapeCut ties": "Song O",
+        "WeaponsRunPlot your escapeForgive and forget": "Song P"
+    }
+}

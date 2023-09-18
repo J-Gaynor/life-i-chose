@@ -1,0 +1,250 @@
+* {
+  color: #fff;
+  font-size: 36px;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+}
+
+body {
+  background-image: url('./assets/background4.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+/* HEADER */
+.app-header {
+  background-color: #000;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  height: 2.5rem;
+  justify-content: center;
+  overflow: visible;
+  width: 100%;
+}
+
+#app-logo {
+  margin-left: auto;
+}
+
+#app-logo-img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: 3rem;
+}
+
+#dropdown-menu {
+  background-color: #000; 
+  border: 1px solid #ccc; 
+  border-top: 0px;
+  border-left: 0px;
+  display: none;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 2.5rem;
+}
+
+#dropdown-menu li h2{
+  font-size: 0.6rem;
+  margin: 0.5rem;
+}
+
+#dropdown-menu li a {
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+
+#header-link {
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+.header-nav:hover + #dropdown-menu {
+  display: block;
+}
+
+#dropdown-menu:hover {
+  display: block;
+}
+
+.header-nav {
+  color: #fff;
+}
+
+#spotify:hover {
+  color: #1ed760;
+}
+
+#apple:hover{
+  color: #fb3d56;
+}
+
+#amazon:hover {
+  color: #390bc5;
+}
+
+#youtube:hover {
+  color: #f00;
+}
+
+/* BODY */
+#album-cover {
+  border-radius: 1%;
+  width: 60%;
+}
+
+#answer-list {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  margin-left: 35%;
+  margin-top: 1.5rem;
+}
+
+#answer-list-items {
+  margin: 2.5% 0;
+}
+
+.answer-text {
+  font-family: 'Moon Dance';
+  font-size: .75rem;
+  text-transform: none;
+}
+
+@media screen and (min-width: 991px){
+  .answer-text:hover {
+    color: yellow;
+  }
+}
+
+.answer-text, #question-text {
+  color: #000; 
+  transition: color 0.4s, opacity 1s;
+}
+
+
+.background {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.change-on-submit {
+  color: yellow !important;
+  opacity: 0;
+}
+
+#question-text {
+  font-family: 'Moon Dance';
+  font-size: .8rem;
+  height: 15%;
+  margin: 1rem 2.5rem 0 2.25rem;
+  text-transform: none;
+}
+
+#release-date {
+  font-size: 16vw;
+  margin: 0;
+  padding: 3rem 0;
+}
+
+.selected-answer {
+  opacity: 0;
+}
+
+#song-link {
+  text-decoration: none;
+}
+
+#song-reveal-name {
+  color: #000;
+  margin-top: 1.1rem;
+  font-size: 0.8rem;
+}
+
+#song-reveal-text {
+  color: #000;
+  font-size: 0.5rem;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.scroll {
+  background-image: url('./assets/book.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  margin: 3rem 0;
+  text-align: center;
+  width: 15rem;
+  height: 15rem;
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 815px) {
+  #dropdown-menu {
+    border-right: 0;
+    width: 100%;
+  }
+
+  .header-nav:active + #dropdown-menu, .header-nav:hover + #dropdown-menu, #dropdown-menu:hover {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  #dropdown-menu li h2{
+    font-size: 0.5em;
+    margin: 0.4rem;
+  }
+  
+  #dropdown-menu li a {
+    color: #333;
+    display: inline-grid;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  #link1, #link2 {
+    text-align: left;
+  }
+
+  #link3, #link4 {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 794px) {
+  #link3 {
+    text-align: left;
+  }
+
+  #link3 {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #answer-list {
+    margin-left: 33%;
+  }
+
+  #question-text {
+    margin: 1rem 1.5rem 0 1.25rem;
+  } 
+
+  #dropdown-menu li h2{
+    font-size: 0.4em;
+  }
+}
+
+@media screen and (max-width: 338px) {
+  #dropdown-menu li h2{
+    font-size: 0.3em;
+  }
+}
