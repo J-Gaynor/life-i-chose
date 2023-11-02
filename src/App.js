@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   const currentDate = new Date();
-  const releaseDate = new Date('31 Dec 2023');
+  const releaseDate = new Date('31 Dec 2024');
   const options = {month: 'short', day: 'numeric', year: 'numeric' };
   const formattedCurrentDate = currentDate.toLocaleDateString(undefined, options);
   const formattedReleaseDate = releaseDate.toLocaleDateString(undefined, options);
