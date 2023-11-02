@@ -26,7 +26,7 @@ function BodyComponent({question, answers, onSubmit, selectedAnswer, questionInd
                     </div>
                 : 
                     <div className='scroll'>
-                        <a id='song-link' href='#'>
+                        <a id='song-link' href='https://www.youtube.com/channel/UCuFiO7wIpDhgpYFn5nsUhFA'>
                             <h2 id='song-reveal-name'>{songName}</h2>
                             <img src={albumCover} alt='Life I Chose album cover.' id='album-cover'/>
                             <p id='song-reveal-text'>Click here to listen to the life YOU chose...</p>
